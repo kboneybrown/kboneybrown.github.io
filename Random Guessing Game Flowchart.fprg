@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Random Guessing Game Flowchart"/>
+        <attribute name="authors" value="kbone"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 07:12:08 PM"/>
+        <attribute name="created" value="a2JvbmU7U0NIT09MLUJVU0lORVNTOzIwMjQtMDktMjk7MDY6Mzg6NTAgUE07Mjk0Mg=="/>
+        <attribute name="edited" value="a2JvbmU7U0NIT09MLUJVU0lORVNTOzIwMjQtMDktMjk7MDc6MTI6MDggUE07MTszMDQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SecretNumber" type="Integer" array="False" size=""/>
+            <declare name="UserNumber" type="Integer" array="False" size=""/>
+            <assign variable="SecretNumber" expression="Random(15)"/>
+            <output expression="&quot;Enter a number between 0 and 14&quot;" newline="True"/>
+            <input variable="UserNumber"/>
+            <while expression="UserNumber &lt;&gt; SecretNumber">
+                <if expression="UserNumber &lt; SecretNumber">
+                    <then>
+                        <output expression="&quot;You are too low&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="UserNumber &gt; SecretNumber">
+                            <then>
+                                <output expression="&quot;You are too high&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <input variable="UserNumber"/>
+            </while>
+            <output expression="&quot;You are correct&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
