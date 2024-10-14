@@ -35,3 +35,25 @@
 		<h1>"Hello World! I'm Kim Brown"</h>
 	</body>
 </html>
+
+<!DOCTYPE html>
+<html>
+	<head><body><h1>My name is Kim Brown</h1>
+<p>I'm a 58 year old lady trying to learn progrogramming. Even after being tutored, I can't do this work. I think I need to go back to cooking and cleaning which is something I can do.</body>
+		<title>My Personal Introduction</title>
+		<style>
+	body{
+		background-color:EAF3E4;
+	}
+	
+	h1{
+		color:BC3A64;
+	}
+
+	p{
+		color: DEBB86:
+	}
+
+</style>
+	</head>
+</html>
